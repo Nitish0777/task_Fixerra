@@ -44,8 +44,8 @@ const PokemonDataFetcher = () => {
       {/* <FormsListing data={pokemonData} /> */}
        {/* <GameIndicesListing data={pokemonData} /> */}
       {/* <HeldItemsListing data={pokemonData} /> */}
-      <MovesListing data={pokemonData} />
-      {/* <StatsListing data={pokemonData} />  */}
+      {/* <MovesListing data={pokemonData} /> */}
+      <StatsListing data={pokemonData} /> 
     </>
   );
 };
