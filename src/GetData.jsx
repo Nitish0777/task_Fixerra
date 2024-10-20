@@ -43,8 +43,8 @@ const PokemonDataFetcher = () => {
       {/* <pre>{JSON.stringify(pokemonData, null, 1)}</pre>  */}
       {/* <FormsListing data={pokemonData} /> */}
        {/* <GameIndicesListing data={pokemonData} /> */}
-      <HeldItemsListing data={pokemonData} />
-      {/* <MovesListing data={pokemonData.moves} /> */}
+      {/* <HeldItemsListing data={pokemonData} /> */}
+      <MovesListing data={pokemonData} />
       {/* <StatsListing data={pokemonData} />  */}
     </>
   );
