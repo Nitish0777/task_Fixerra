@@ -38,15 +38,44 @@ const PokemonDataFetcher = () => {
   }
 
   return (
-    <>
-      {/* Display the data */}
-      {/* <pre>{JSON.stringify(pokemonData, null, 1)}</pre>  */}
-      {/* <FormsListing data={pokemonData} /> */}
-       {/* <GameIndicesListing data={pokemonData} /> */}
-      {/* <HeldItemsListing data={pokemonData} /> */}
-      {/* <MovesListing data={pokemonData} /> */}
-      <StatsListing data={pokemonData} /> 
-    </>
+    <div className="container mx-auto py-8 px-6 bg-gray-100">
+      <h1 className="text-4xl font-bold text-center mb-8 text-gray-800">Pokémon Data Overview</h1>
+
+      {/* Forms Listing */}
+      <section className="mb-8">
+        <div className="bg-white p-8 rounded-lg shadow-lg">
+          <FormsListing data={pokemonData} />
+        </div>
+      </section>
+
+      {/* Game Indices Listing */}
+      <section className="mb-8">
+        <div className="bg-white p-6 rounded-lg shadow-lg">
+          <GameIndicesListing data={pokemonData} />
+        </div>
+      </section>
+
+      {/* Held Items Listing */}
+      <section className="mb-8">
+        <div className="bg-white p-6 rounded-lg shadow-lg">
+          <HeldItemsListing data={pokemonData} />
+        </div>
+      </section>
+
+      {/* Moves Listing */}
+      <section className="mb-8">
+        <div className="bg-white p-6 rounded-lg shadow-lg">
+          <MovesListing data={pokemonData} />
+        </div>
+      </section>
+
+      {/* Stats Listing */}
+      <section className="mb-8">
+        <div className="bg-white p-6 rounded-lg shadow-lg">
+          <StatsListing data={pokemonData} />
+        </div>
+      </section>
+    </div>
   );
 };
 
